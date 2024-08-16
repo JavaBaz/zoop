@@ -1,5 +1,6 @@
 package com.github.JavaBaz.animals;
 
+import com.github.JavaBaz.infra.FoodType;
 import com.github.JavaBaz.infra.Origin;
 
 import java.time.LocalDate;
@@ -12,16 +13,15 @@ public abstract class AbstractAnimal {
     protected String name;
     protected LocalDate dateOfBirth;
     protected Origin origin;
-    // TODO : add an enum named FoodType in infra
-    //      containing these : HERBIVORE, CARNIVORES, OMNIVORES
+    protected FoodType foodType;
 
-
-    public AbstractAnimal(boolean isWild, String name, LocalDate dateOfBirth, Origin origin) {
+    public AbstractAnimal(boolean isWild, String name, LocalDate dateOfBirth, Origin origin, FoodType foodType) {
         this.hp = 100;
         this.isWild = isWild;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.origin = origin;
+        this.foodType = foodType;
     }
 
     public String getName() {
@@ -31,4 +31,11 @@ public abstract class AbstractAnimal {
     protected void sleep() {
     }
 
+    public FoodType getFoodType() {
+        return foodType;
+    }
+
+    public void setFoodType(FoodType foodType) {
+        this.foodType = foodType;
+    }
 }
