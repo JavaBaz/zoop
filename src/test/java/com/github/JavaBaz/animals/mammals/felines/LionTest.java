@@ -22,4 +22,17 @@ class LionTest {
         testLion.sleep();
         assertTrue(testLion.getHp() == 100);
     }
+
+    @Test
+    @DisplayName("hp should not be more than 100 - 1")
+    void hpShouldNotBeMoreThan100_1() {
+        Lion testLion = new Lion(true,
+                "nameOfTestLion",
+                LocalDate.now(),
+                Origin.AFRICA,
+                FoodType.CARNIVORES);
+        testLion.setHp(99);
+        testLion.sleep();
+        assertTrue(testLion.getHp() == 100);
+    }
 }
