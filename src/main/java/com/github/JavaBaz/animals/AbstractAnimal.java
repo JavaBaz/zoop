@@ -29,6 +29,9 @@ public abstract class AbstractAnimal {
     }
 
     protected void sleep() {
+        if((this.hp += 5) <= 100) {
+            this.hp += 5;
+        } else this.hp = 100;
     }
 
     public FoodType getFoodType() {
