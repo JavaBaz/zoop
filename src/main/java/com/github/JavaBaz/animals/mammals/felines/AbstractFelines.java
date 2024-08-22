@@ -22,6 +22,4 @@ public abstract class AbstractFelines extends AbstractMammal {
           } else
               this.hp = 100;
     }
-
-
 }
