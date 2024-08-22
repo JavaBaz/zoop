@@ -40,5 +40,6 @@ public class Main {
                 " and a defence power of " + boufal.getDefencePower());
         System.out.println("shirshah has an attack power of " + shirshah.getAttackPower() +
                 " a defence power of " + shirshah.getDefencePower());
+
     }
 }
