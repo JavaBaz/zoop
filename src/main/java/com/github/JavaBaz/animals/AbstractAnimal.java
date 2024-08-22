@@ -32,14 +32,16 @@ public abstract class AbstractAnimal {
         return name;
     }
 
-    public void attack(AbstractAnimal attacker, AbstractAnimal defender) {
-        if ((attacker.attackPower += 1) <= 5) {
-            attacker.attackPower += 1;
-        } else attacker.attackPower = 5;
+    public void attack(AbstractAnimal defender) {
+        if ((this.attackPower += 1) <= 5) {
+            this.attackPower += 1;
+        } else this.attackPower = 5;
 
         if ((defender.defencePower -= 1) >= 0) {
             defender.defencePower -= 1;
         } else defender.defencePower = 0;
+
+        System.out.println(name + " attacks " + defender.getName() + "!!!");
     }
 
     protected void sleep() {
@@ -48,21 +50,13 @@ public abstract class AbstractAnimal {
         } else this.hp = 100;
     }
 
-    public FoodType getFoodType() {
-        return foodType;
-    }
+    public FoodType getFoodType() { return foodType; }
 
-    public void setFoodType(FoodType foodType) {
-        this.foodType = foodType;
-    }
+    public void setFoodType(FoodType foodType) { this.foodType = foodType; }
 
-    public int getHp() {
-        return hp;
-    }
+    public int getHp() { return hp; }
 
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
+    public void setHp(int hp) { this.hp = hp; }
 
     public int getAttackPower() { return attackPower; }
 
@@ -72,31 +66,17 @@ public abstract class AbstractAnimal {
 
     public void setDefencePower(int defencePower) { this.defencePower = defencePower; }
 
-    public boolean isWild() {
-        return isWild;
-    }
+    public boolean isWild() { return isWild; }
 
-    public void setWild(boolean wild) {
-        isWild = wild;
-    }
+    public void setWild(boolean wild) { isWild = wild; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) { this.name = name; }
 
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
-    }
+    public LocalDate getDateOfBirth() { return dateOfBirth; }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
+    public void setDateOfBirth(LocalDate dateOfBirth) { this.dateOfBirth = dateOfBirth; }
 
-    public Origin getOrigin() {
-        return origin;
-    }
+    public Origin getOrigin() { return origin; }
 
-    public void setOrigin(Origin origin) {
-        this.origin = origin;
-    }
+    public void setOrigin(Origin origin) { this.origin = origin; }
 }
