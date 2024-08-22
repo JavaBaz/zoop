@@ -32,6 +32,16 @@ public abstract class AbstractAnimal {
         return name;
     }
 
+    public void attack(AbstractAnimal attacker, AbstractAnimal defender) {
+        if ((attacker.attackPower += 1) <= 5) {
+            attacker.attackPower += 1;
+        } else attacker.attackPower = 5;
+
+        if ((defender.defencePower -= 1) >= 0) {
+            defender.defencePower -= 1;
+        } else defender.defencePower = 0;
+    }
+
     protected void sleep() {
         if((this.hp += 5) <= 100) {
             this.hp += 5;
