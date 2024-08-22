@@ -9,6 +9,7 @@ import java.time.LocalDate;
 public abstract class AbstractAnimal {
 
     protected int hp;
+    protected int attackPower;
     protected boolean isWild;
     protected String name;
     protected LocalDate dateOfBirth;
@@ -49,6 +50,10 @@ public abstract class AbstractAnimal {
     public void setHp(int hp) {
         this.hp = hp;
     }
+
+    public int getAttackPower() { return attackPower; }
+
+    public void setAttackPower(int attackPower) { this.attackPower = attackPower; }
 
     public boolean isWild() {
         return isWild;
