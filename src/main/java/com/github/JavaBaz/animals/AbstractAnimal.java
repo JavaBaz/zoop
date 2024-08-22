@@ -10,6 +10,7 @@ public abstract class AbstractAnimal {
 
     protected int hp;
     protected int attackPower;
+    protected int defencePower;
     protected boolean isWild;
     protected String name;
     protected LocalDate dateOfBirth;
@@ -54,6 +55,10 @@ public abstract class AbstractAnimal {
     public int getAttackPower() { return attackPower; }
 
     public void setAttackPower(int attackPower) { this.attackPower = attackPower; }
+
+    public int getDefencePower() { return defencePower; }
+
+    public void setDefencePower(int defencePower) { this.defencePower = defencePower; }
 
     public boolean isWild() {
         return isWild;
