@@ -6,7 +6,6 @@ import com.github.JavaBaz.infra.Origin;
 import java.time.LocalDate;
 
 public class Lion extends AbstractFelines {
-
     public Lion(boolean isWild, String name, LocalDate dateOfBirth, Origin origin, FoodType foodType) {
         super(isWild, name, dateOfBirth, origin, foodType);
     }
