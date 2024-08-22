@@ -20,6 +20,7 @@ public abstract class AbstractAnimal {
     public AbstractAnimal(boolean isWild, String name, LocalDate dateOfBirth, Origin origin, FoodType foodType) {
         this.hp = 100;
         this.attackPower = 3;
+        this.defencePower = 2;
         this.isWild = isWild;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
