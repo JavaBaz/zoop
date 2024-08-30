@@ -50,6 +50,8 @@ public abstract class AbstractAnimal {
         } else this.hp = 100;
     }
 
+    public String getName() { return name; }
+
     public FoodType getFoodType() { return foodType; }
 
     public void setFoodType(FoodType foodType) { this.foodType = foodType; }
