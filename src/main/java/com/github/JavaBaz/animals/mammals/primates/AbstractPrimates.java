@@ -7,7 +7,7 @@ import com.github.JavaBaz.infra.Origin;
 import java.time.LocalDate;
 
 public abstract class AbstractPrimates extends AbstractMammal {
-    public AbstractPrimates(boolean isWild, String name, LocalDate dateOfBirth, Origin origin, FoodType foodType) {
-        super(isWild, name, dateOfBirth, origin, foodType);
+    public AbstractPrimates(boolean isWild, String name, LocalDate dateOfBirth, int attackPower, int defencePower, Origin origin, FoodType foodType) {
+        super(isWild, name, dateOfBirth, attackPower, defencePower, origin, foodType);
     }
 }
