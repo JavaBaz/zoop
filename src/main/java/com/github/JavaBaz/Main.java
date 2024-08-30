@@ -16,6 +16,8 @@ public class Main {
         Lion shirshah = new Lion(true,
                             "shirshah",
                 LocalDate.now(),
+                4,
+                3,
                 Origin.AFRICA,
                 FoodType.CARNIVORES);
 
@@ -25,6 +27,8 @@ public class Main {
         Orangutan boufal = new Orangutan(false,
                 "boufal",
                 LocalDate.now().minusMonths(4),
+                3,
+                3,
                 Origin.ASIA,
                 FoodType.OMNIVORES);
 
