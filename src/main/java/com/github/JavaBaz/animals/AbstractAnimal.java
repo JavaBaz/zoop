@@ -38,6 +38,9 @@ public abstract class AbstractAnimal {
         } else defender.defencePower = 0;
 
         System.out.println(name + " attacks " + defender.getName() + "!!!");
+        System.out.println("\n============================");
+        System.out.println(" "+ name + " attacks " + defender.getName() + "!!!");
+        System.out.println("============================\n");
     }
 
     protected void sleep() {
