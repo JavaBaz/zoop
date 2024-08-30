@@ -77,4 +77,8 @@ public abstract class AbstractAnimal {
     public Origin getOrigin() { return origin; }
 
     public void setOrigin(Origin origin) { this.origin = origin; }
+
+    public void showPowerStatus(){
+        System.out.println(this.getName() + " → " + " HP: " + this.getHp() + " and Attack: " + this.getAttackPower()+ " and Defence: " + this.getDefencePower());
+    }
 }
