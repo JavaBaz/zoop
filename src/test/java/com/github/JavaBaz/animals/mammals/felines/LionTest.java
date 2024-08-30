@@ -17,6 +17,8 @@ class LionTest {
         Lion testLion = new Lion(true,
                 "nameOfTestLion",
                 LocalDate.now(),
+                3,
+                2,
                 Origin.AFRICA,
                 FoodType.CARNIVORES);
         testLion.sleep();
@@ -29,6 +31,8 @@ class LionTest {
         Lion testLion = new Lion(true,
                 "nameOfTestLion",
                 LocalDate.now(),
+                4,
+                3,
                 Origin.AFRICA,
                 FoodType.CARNIVORES);
         testLion.setHp(99);
