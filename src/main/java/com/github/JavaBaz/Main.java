@@ -29,6 +29,8 @@ public class Main {
                 FoodType.OMNIVORES);
 
 
+        boufal.showPowerStatus();
+        shirshah.showPowerStatus();
 
         shirshah.attack(boufal);
 
