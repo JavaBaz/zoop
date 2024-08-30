@@ -17,10 +17,10 @@ public abstract class AbstractAnimal {
     protected Origin origin;
     protected FoodType foodType;
 
-    public AbstractAnimal(boolean isWild, String name, LocalDate dateOfBirth, Origin origin, FoodType foodType) {
+    public AbstractAnimal(boolean isWild, String name, LocalDate dateOfBirth, int attackPower, int defencePower, Origin origin, FoodType foodType) {
         this.hp = 100;
-        this.attackPower = 3;
-        this.defencePower = 2;
+        this.attackPower = attackPower;
+        this.defencePower = defencePower;
         this.isWild = isWild;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
