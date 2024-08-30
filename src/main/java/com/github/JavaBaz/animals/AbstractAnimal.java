@@ -37,10 +37,12 @@ public abstract class AbstractAnimal {
             defender.defencePower -= 1;
         } else defender.defencePower = 0;
 
-        System.out.println(name + " attacks " + defender.getName() + "!!!");
         System.out.println("\n============================");
         System.out.println(" "+ name + " attacks " + defender.getName() + "!!!");
         System.out.println("============================\n");
+        System.out.println("== Situation after attack ==");
+        defender.showPowerStatus();
+        this.showPowerStatus();
     }
 
     protected void sleep() {
