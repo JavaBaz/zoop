@@ -28,10 +28,6 @@ public abstract class AbstractAnimal {
         this.foodType = foodType;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void attack(AbstractAnimal defender) {
         if ((this.attackPower + 1) <= 5) {
             this.attackPower += 1;
