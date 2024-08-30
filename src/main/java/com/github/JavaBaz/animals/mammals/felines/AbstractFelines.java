@@ -9,8 +9,8 @@ import java.time.LocalDate;
 public abstract class AbstractFelines extends AbstractMammal {
 
 
-    public AbstractFelines(boolean isWild, String name, LocalDate dateOfBirth, Origin origin, FoodType foodType) {
-        super(isWild, name, dateOfBirth, origin, foodType);
+    public AbstractFelines(boolean isWild, String name, LocalDate dateOfBirth, int attackPower, int defencePower, Origin origin, FoodType foodType) {
+        super(isWild, name, dateOfBirth, attackPower, defencePower, origin, foodType);
     }
 
     @Override
