@@ -28,18 +28,10 @@ public class Main {
                 Origin.ASIA,
                 FoodType.OMNIVORES);
 
-        System.out.println("boufal has an attack power of " + boufal.getAttackPower() +
-                            " and a defence power of " + boufal.getDefencePower());
-        System.out.println("shirshah has an attack power of " + shirshah.getAttackPower() +
-                            " a defence power of " + shirshah.getDefencePower());
+
+
         shirshah.attack(boufal);
 
-        System.out.println("\nThis is what's happened after the attack: ");
-
-        System.out.println("boufal has an attack power of " + boufal.getAttackPower() +
-                " and a defence power of " + boufal.getDefencePower());
-        System.out.println("shirshah has an attack power of " + shirshah.getAttackPower() +
-                " a defence power of " + shirshah.getDefencePower());
 
     }
 }
