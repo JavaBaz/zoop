@@ -17,7 +17,7 @@ public abstract class AbstractFelines extends AbstractMammal {
      public void sleep() {
           System.out.println(getName()+" is sleeping between 12 and 18 hours");
 
-          if((this.hp += 25) <= 100){
+          if((this.hp + 25) <= 100){
               this.hp += 25;
           } else
               this.hp = 100;
